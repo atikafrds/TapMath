@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2DE0ABCD-A711-1346-6ECB-431388963986}</ProjectGuid>
+    <ProjectGuid>{717AB195-521F-5D66-43DD-461ADF869337}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,10 +46,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\BackgroundManager.cs" />
+     <Compile Include="Assets\Script\BackgroundScript.cs" />
      <Compile Include="Assets\Script\ClickObject.cs" />
+     <Compile Include="Assets\Script\ClickSound.cs" />
      <Compile Include="Assets\Script\GameFlow.cs" />
+     <Compile Include="Assets\Script\Item.cs" />
      <Compile Include="Assets\Script\SceneController.cs" />
-     <Compile Include="Assets\Script\StoreItem.cs" />
      <Compile Include="Assets\Script\StoreItemScript.cs" />
      <Compile Include="Assets\Script\StoreManager.cs" />
      <Compile Include="Assets\Script\TotalScore.cs" />
@@ -76,10 +79,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.Sqlite">
- <HintPath>D:/TapMath Project/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+ <HintPath>D:/TapMath/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
  </Reference>
  <Reference Include="System.Data">
- <HintPath>D:/TapMath Project/Assets/Plugins/System.Data.dll</HintPath>
+ <HintPath>D:/TapMath/Assets/Plugins/System.Data.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

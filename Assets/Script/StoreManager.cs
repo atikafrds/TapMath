@@ -31,7 +31,7 @@ public class StoreManager : MonoBehaviour {
 		using (IDbConnection dbConnection = new SqliteConnection(connectionString)) {
 			dbConnection.Open();
 			using (IDbCommand dbCommand = dbConnection.CreateCommand()) {
-				string query = "CREATE TABLE IF NOT EXISTS \"items\" (\"id\" INTEGER PRIMARY KEY  NOT NULL ,\"name\" VARCHAR NOT NULL ,\"price\" INTEGER NOT NULL,\"ownership\" INTEGER NOT NULL  DEFAULT (0) )";
+				string query = "CREATE TABLE IF NOT EXISTS items(id INTEGER PRIMARY KEY  NOT NULL, name VARCHAR NOT NULL, price INTEGER NOT NULL, ownership INTEGER NOT NULL  DEFAULT (0))";
 				dbCommand.CommandText = query;
 				dbCommand.ExecuteScalar ();
 				dbConnection.Close();
@@ -39,7 +39,7 @@ public class StoreManager : MonoBehaviour {
 		}
 	}
 
-	public void GetItems() {
+	private void GetItems() {
 		itemList.Clear();
 		using (IDbConnection dbConnection = new SqliteConnection(connectionString)) {
 			dbConnection.Open();

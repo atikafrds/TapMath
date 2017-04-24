@@ -5,13 +5,27 @@ using UnityEngine.UI;
 
 public class StoreItemScript : MonoBehaviour {
 
+	public GameObject itemPicture;
 	public GameObject itemName;
 	public GameObject itemPrice;
-	public GameObject itemPicture;
+	public Sprite Default;
+	public Sprite PinkandBlue;
+	public Sprite Mozaic;
+	public Sprite Deer;
 
 	public void setItem(string name, int price) {
-		itemName.GetComponent<TextMesh> ().text = name;
-		itemPrice.GetComponent<TextMesh> ().text = price.ToString ();
-		//itemPicture.GetComponent<Image>().sprite = name;
+		Sprite selectedSprite;
+		if (name.Equals ("Default")) {
+			selectedSprite = Default;
+		} else if (name.Equals ("Pink and Blue")) {
+			selectedSprite = PinkandBlue;
+		} else if (name.Equals ("Mozaic")) {
+			selectedSprite = Mozaic;
+		} else {
+			selectedSprite = Deer;
+		}
+		itemPicture.GetComponent<Image> ().sprite = selectedSprite;
+		itemName.GetComponent<Text> ().text = name;
+		itemPrice.GetComponent<Text> ().text = price.ToString ();
 	}
 }

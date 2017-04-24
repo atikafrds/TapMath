@@ -54,7 +54,7 @@ public class GameFlow : MonoBehaviour {
 					StopCoroutine ("RemainingTime");
 					isLevelUp = true;
 					level++;
-					score += 10 * level;
+					score += 1 * level;
 					remainingItems = 3;
 					if (level < 20) {
 						timeLeft = 10;
