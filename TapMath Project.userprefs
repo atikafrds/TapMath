@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\StoreManager.cs">
+    <Files>
+      <File FileName="Assets\script\ClickObject.cs" Line="11" Column="17" />
+      <File FileName="Assets\Script\ValueNumber.cs" Line="8" Column="33" />
+      <File FileName="Assets\Script\GameFlow.cs" Line="9" Column="39" />
+      <File FileName="Assets\Script\PanelController.cs" Line="30" Column="48" />
+      <File FileName="Assets\Script\StoreItemScript.cs" Line="3" Column="19" />
+      <File FileName="Assets\Script\StoreItem.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\TotalScore.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\StoreManager.cs" Line="64" Column="32" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
